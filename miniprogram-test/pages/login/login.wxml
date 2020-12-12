@@ -1,0 +1,14 @@
+<view class="container">
+	<view class="content">
+		<view class="title">用户登录</view>
+		<form bindsubmit="formSubmit">
+			<view class="uni-form-item">
+				<input type="text" class="uni-input" name="username" maxlength="20" placeholder="请输入用户名" />
+			</view>
+			<view class="uni-form-item">
+				<input password='true' class="uni-input" name="password" maxlength="20" placeholder="请输入密码" />
+			</view>
+			<button style="width: 100%;" class="btn-primary" type="primary" form-type='submit'>登录</button>
+		</form>
+	</view>
+</view>

@@ -1,0 +1,19 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/login/login"
+		
+		
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#00BFFF",
+		"navigationBarTitleText": "我的微信小程序",
+		"navigationBarTextStyle": "white"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"useExtendedLib": {
+		"weui": true
+	}
+}

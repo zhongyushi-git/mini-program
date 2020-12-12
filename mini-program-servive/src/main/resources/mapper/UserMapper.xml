@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zys.miniprogramservive.dao.UserDao">
+
+
+    <select id="loginForBind" resultType="com.zys.miniprogramservive.entity.User">
+        select * from user where username =#{username} and password =#{password}
+    </select>
+
+    <select id="checkBind" resultType="java.util.Map">
+        select * from user_bind where openid =#{openid}
+    </select>
+
+    <insert id="addBind">
+        insert into user_bind values(null,#{openId},#{username},sysdate())
+    </insert>
+
+
+</mapper>

@@ -1,0 +1,12 @@
+#配置数据源
+spring:
+  #配置mysql连接信息
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/db2020?useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+    username: root
+    password: zys123456
+
+mybatis:
+  #指定mapper.xml的位置
+  mapperLocations: classpath*:mapper/*Mapper.xml
